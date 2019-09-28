@@ -1,0 +1,170 @@
+/* AUTHOR  : ABDUL WAHID NAAFI
+INSTAGRAM : @IAM_NAAFI
+INSTAGRAM : @WEB.IO */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+*
+{
+	margin:0;
+	padding: 0;
+}
+body
+{
+	background-color: rgb(210,210,210);
+	font-family: 'Montserrat';
+}
+.ls_container
+{
+	display: flex;
+	justify-content: center;
+	position: relative;
+	padding: 10px;
+	height: 450px;
+}
+.platform
+{
+	position: absolute;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	height: 450px;
+	width: 350px;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+.platform input
+{
+	width: 80%;
+	height: 30px;
+	background-color: transparent;
+	margin:20px;
+	border:0.5px solid white;
+	padding-left: 10px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 12px;
+}
+input:hover
+{
+	background-color: white;
+}
+.login
+{
+	background-color: #ECDCC9;
+	z-index: ;
+}
+.showlogin
+{
+	background-color: #ECDCC9;
+	animation-name: up;
+	animation-duration: 4s;
+}
+.signup
+{
+	background-color: #9a8e83;
+}
+.showsignup
+{
+	background-color: #9a8e83;
+	animation-name: up;
+	animation-duration: 4s;
+}
+input::placeholder
+{
+	color: black;
+}
+.hidesignup
+{
+	background-color: #9a8e83;
+	z-index:;
+	animation-name: moveleft;
+	animation-duration: 3s;
+}
+.hidelogin
+{
+	background-color: #ECDCC9;
+	z-index:;
+	animation-name: moveright;
+	animation-duration: 3s;
+}
+
+.switch
+{
+	height: 30px;
+	background-color: white !important;
+	margin:20px;
+	height: default !important;
+	border:0.5px solid white;
+}
+.switch:hover
+{
+ cursor: pointer;	
+}
+.page
+{
+	height: 30px;
+	background-color: transparent;
+	margin:20px;
+	border:none;
+}
+.page:hover
+{
+ font-weight: bold;
+ cursor: pointer;	
+}
+p
+{
+	margin:20px;
+}
+h3
+{
+	margin:20px;
+	font-weight: lighter;
+}
+@keyframes moveleft
+{
+	0%{transform: translate(0px);
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
+	50%{transform: translate(-380px);
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		z-index: 0;
+		/*opacity: 0.8;*/
+	}
+	100%{transform: translate(0px);
+			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		
+		z-index: 0;
+	}
+}
+@keyframes moveright
+{
+	0%{transform: translate(0px);
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);}
+	50%{
+		transform: translate(380px);
+		box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		z-index: 1;
+	}
+	100%{transform: translate(0px);
+			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		
+		z-index: 0;
+	}
+}
+
+@keyframes up
+{
+	0%{
+
+	}
+	50%
+	{
+
+		box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+		/*opacity: 0.8;*/
+	}
+	100%
+	{
+			box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+		z-index: 1;
+	}
+	
+}

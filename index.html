@@ -1,0 +1,62 @@
+ <!DOCTYPE html>
+<html>
+<head>
+	<!-- 	 
+AUTHOR  : ABDUL WAHID NAAFI
+INSTAGRAM : @IAM_NAAFI
+INSTAGRAM : @WEB.IO
+-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h3>M I N I M A L I S T I C</h3>
+<div class="ls_container">
+<div id="login" class="platform login">
+	<h3>L O G I N</h3>
+	<input type="text" name="" placeholder="Username"><br>
+	<input type="password" name="" placeholder="Password"><br>
+	<input type="submit" class="switch" name="" value="L O G I N"><br>
+	<br>
+	<button class="page" onclick="showsignup();">New User ?&nbsp S I G N &nbsp U P&nbsp</button>
+</div>
+<div id="signup" class="platform signup posabsolute">
+	<h3>S I G N &nbsp U P</h3>
+	<input type="text" name="" placeholder="Username"><br>
+	<input type="password" name="" placeholder="Password"><br>
+	<input type="tel" name="" placeholder="Mobile Number"><br>
+	<input type="submit" class="switch" name="" value="R E G I S T E R ">
+	<br>
+	<button class="page" onclick="showlogin();">Already Registered ?&nbspL O G I N&nbsp</button>
+</div>
+</div>
+<script type="text/javascript">
+	// AUTHOR  : ABDUL WAHID NAAFI
+// INSTAGRAM : @IAM_NAAFI
+// INSTAGRAM : @WEB.IO	
+	function showlogin()
+	{
+		document.getElementById('login').className='platform showlogin';
+		document.getElementById('signup').className='platform hidesignup';
+		setTimeout(zindexlog,3000);
+
+	}
+	function zindexlog()
+	{
+		document.getElementById('signup').style.zIndex='0';
+		document.getElementById('login').style.zIndex='1';
+	}
+	function showsignup()
+	{
+		document.getElementById('login').className='platform hidelogin';
+		document.getElementById('signup').className='platform showsignup';
+		setTimeout(zindexsig,3000);
+	}
+	function zindexsig()
+	{
+		document.getElementById('login').style.zIndex='0';
+		document.getElementById('signup').style.zIndex='1';
+	}
+</script>
+</body>
+</html>
